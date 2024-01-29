@@ -6,10 +6,10 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     margin-left: 132px;
-    margin-bottom:10px;
-    margin-right: 105px;
+    margin-bottom:9px;
+    margin-right: 104px;
     background-color: #302c2c;
-    border-radius: 4px;
+
 
 }
 
@@ -23,27 +23,24 @@ body{
 
 
 .keys{
-    flex: 0 0 33%;
+    flex: 0 0 25%;
     
     height: 40px;
 }
 
-.clear{
-    width: 132px;
-    margin-left: 9vw;
-    margin-right: 80vw;
-    height: 50px;
+
+#clear{
+    background-color: #ff620e;
+    color: white;
 }
 
-
-
 .keys, .clear {
-    border: 1px solid #cccccc; /* Light grey border */
-    background-color: #302c2c; /* Light background color */
+    border: 1px solid #2c2929; /* Light grey border */
+    background-color: #ffffff; /* Light background color */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
     height: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 16px; /* Larger font size for readability */
     display: flex;
@@ -51,61 +48,64 @@ body{
     justify-content: center;
     transition: background-color 0.3s, box-shadow 0.3s; 
  }
-
-.keys.operation , .clear, #zero{
-    background-color: #ffffff;
-    color: black;
+.keys:hover{
+    background-color: #1d1b1b;
+    color: white;
 }
 
-.keys.operation:hover{
-    background-color: #302c2c;
-    color:white;
-}
-#clear:hover{
-    background-color: #302c2c;
-    color:white;
+
+.keys.operation{
+    background-color: #0f0f0f; /* Light background color */
+    color:#ffffff
 }
 
-#zero:hover{
-    background-color: #302c2c;
-    color:white;
+.keys.operation:hover, .keys#equal:hover  {
+    background-color: #ffffff; /* Light background color */
+    border-radius: 5px;
+    color:#000000
 }
- #equal{
-    background-color: #ff620e;
- }
 
- #equal:hover{
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
- }
- .keys:hover, .clear:hover {
-    background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
- }
+
+
+#equal{
+    background-color: #0f0f0f; /* Light background color */
+    border-radius: 5px;
+    color:#ffffff
+}
+
+
+
  
 .display-box{
-    background-color: #302c2c;
-    color: white;
+    background-color: #efedede7;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    margin-left:50px;
+    margin-left:3px;
     align-items: center;
-    margin-bottom:4px;
-    width: 20vw;
+    margin-bottom:8px;
+    width: 25.5vw;
+    margin-right:130px;
     height: 12px;
-    border: 1px solid black;
+    border: 1px black;
     padding: 10px;
     display: flex; 
+    flex-basis: 80%;
 
 
 }
 
 .super-box {
+    position: absolute;
     border: 2px solid black;
+    background-color: #ffffff;
     width: auto; /* Adjust the width as needed */
     max-width: 400px; /* Maximum width of the calculator */
-    margin: 0 auto; /* Center the calculator */
     padding: 20px; /* Padding around the calculator */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
 }
 
+.container{
+    position: relative;
+    margin-top:20vh;
+   margin-left:35vw;
+}
