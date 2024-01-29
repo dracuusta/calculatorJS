@@ -2,15 +2,15 @@ body{
     background-color: rgba(255, 255, 255, 0.928);
 }
 .header{
-   color: white;
+   color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: sans-serif;
-    margin-left: 132px;
+    margin-left: 100px;
     margin-bottom:9px;
-    margin-right: 104px;
-    background-color: #302c2c;
-
-
+    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 
