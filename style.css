@@ -7,7 +7,7 @@ body{
     font-family: sans-serif;
     margin-left: 100px;
     margin-bottom:9px;
-    margin-right: 90px;
+    margin-right: 70px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -83,7 +83,7 @@ body{
  
 .display-box{
     background-color: #efedede7;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.6);
     font-family: Arial, Helvetica, sans-serif;
     margin-left:3px;
     align-items: center;
@@ -97,6 +97,12 @@ body{
     flex-basis: 80%;
 
 
+}
+
+.bold-text {
+    /* Style for regular bold text */
+    color: rgba(0, 0, 0, 1); /* No transparency */
+    font-family: sans-serif;
 }
 
 .super-box {

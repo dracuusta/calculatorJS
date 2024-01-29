@@ -22,6 +22,10 @@ const displayDiv=document.querySelector('.display-box');
 
 buttons.forEach((button)=>{
     button.addEventListener('click',()=>{
+        if(numA==""&&operator==""&&numB=="")
+        {
+            displayDiv.classList.add("bold-text");
+        }
         if(button.classList.contains('number'))
         {
             if(numA==="")
