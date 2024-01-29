@@ -55,6 +55,9 @@ buttons.forEach((button)=>{
         }
      const answer=operate(numA,operator,numB);
      displayDiv.innerHTML=answer;
+     numA=answer;
+     numB="";
+     operator="";
     }
 
    
